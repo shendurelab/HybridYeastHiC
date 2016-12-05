@@ -1,0 +1,67 @@
+README
+
+to reproduce Hi-C data
+0. cd scripts
+1. ./compile.sh (for c+00x)
+2. ./prepare_genomes.sh
+3. ./pipeline.sh -r ../refs.txt -t ../samples_raw.txt 
+4. ./pipeline.sh -p ../samples_control.txt
+5. ./centromere_annotations.sh
+6. ./annotate_references.sh
+7. ./homology.sh
+once #3 finishes:
+8. ./masks.sh
+9. ./pipeline.sh -p ../samples.txt -m ../matrices.txt
+
+to reproduce model data
+10. cd model
+11. ./run_all.sh
+12. ./make_heatmaps.sh
+
+need files:
+references/saccer3.fsa
+references/saccharomyces_cerevisiae_R64-2-1-20150113.gff
+references/SbayDRS.ultrascaf
+references/Sbay.gff
+references/Sbay3_new.fa
+references/Sbay3_revision.bed
+references/Spar.ultrascaf
+references/Spar.gff
+references/Spar_revision.bed
+references/DBVPG6044_FALCON_quiver.fa
+references/Y12_FALCON_quiver.fa
+references/2micron.fa
+references/rDNA.bed
+references/rDNA.fa
+rawfiles.txt
+restr_enz.txt
+refs.txt
+samples.txt
+samples_controls.txt
+matrices.txt
+scripts/annotate_references.sh
+scripts/build_references.sh
+scripts/centromere_annotations.sh
+scripts/compile.sh
+scripts/create_Sbrep_mask.sh
+scripts/create_Spgap_mask.sh
+scripts/create_Y12xDBVPG6044_mask.sh
+scripts/digest_genome.cpp
+scripts/genome2reads.cpp
+scripts/homology_all_best.sh
+scripts/homology_matrices.cpp
+scripts/homology.sh
+scripts/make_matrix.cpp
+scripts/make_matrix.sh
+scripts/mappability.sh
+scripts/masks.sh
+scripts/pipeline.sh
+scripts/prepare_genomes.sh
+scripts/process_pairs.cpp
+scripts/process_pairs_dual.cpp
+scripts/process_reads.sh
+scripts/revise_Sbay.sh
+scripts/revise_Spar.sh
+scripts/trim_reads.sh
+masks/rDNA.bed
+masks/none.bed
