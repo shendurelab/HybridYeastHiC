@@ -1,0 +1,3 @@
+ScSb_v1	ScSb_2micron_revised	32000	none	1.0	model/ScSb_v1.c45.32000
+ScSb_v2	ScSb_2micron_revised	32000	none	1.0	model/ScSb_v2.c45.32000
+ScSb_v3	ScSb_2micron_revised	32000	none	1.0	model/ScSb_v3.c45.32000
