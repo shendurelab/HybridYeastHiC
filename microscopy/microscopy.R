@@ -17,7 +17,7 @@ data <- read.csv("clustering_data.csv",header=FALSE)
 
 # frequency polygon plot
 pdf("HAS1_clustering_freqpoly.pdf",2.2,1.7)
-ggplot(data) + geom_freqpoly(aes(x=V1,color=factor(V2,levels=conds)),binwidth=0.15,boundary=0,size=.5) + 
+ggplot(data) + geom_freqpoly(aes(x=V1,color=factor(V2,levels=conds)),binwidth=0.15,boundary=-0.001,size=.5) + 
   scale_color_manual(values = cols,name="",labels=conds) + 
   theme_classic() + 
   scale_x_continuous(expand=c(0,0)) + 
