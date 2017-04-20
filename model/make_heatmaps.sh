@@ -5,7 +5,7 @@
 # Seungsoo Kim
 
 # creates list corresponding each bead number to 32 kb bins, using PDB file
-for ref in ScSb_v1 ScSb_v2 ScSb_v3
+for ref in 'ScSu_v1' 'ScSu_v2' 'ScSu_v3'
 do
   awk 'BEGIN{OFS="\t"; chr=""; b=0; cum=-1}{if(chr != $10) cum+=int((b-1)/10)+1; print cum+int(($6-1)/10), $10, $3, $6; b=$6; chr=$10}' $ref/1.pdb > $ref.32000.bins
 done
@@ -14,7 +14,7 @@ done
 g++ interactions2heatmap.cpp -o interactions2heatmap -O3
 
 # run C++ script through simulation data
-for ref in 'ScSb_v1' 'ScSb_v2' 'ScSb_v3'
+for ref in 'ScSu_v1' 'ScSu_v2' 'ScSu_v3'
 do
   for c in 45
   do

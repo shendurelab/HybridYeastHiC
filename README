@@ -14,54 +14,102 @@ once #3 finishes:
 9. ./pipeline.sh -p ../samples.txt -m ../matrices.txt
 
 to reproduce model data
-10. cd model
+10. cd ../model
 11. ./run_all.sh
 12. ./make_heatmaps.sh
 
+to reproduce ChIP-seq data
+13. cd ../ChIPseq/scripts
+14. ./run_all.sh
+
+to reproduce RNA-seq data
+15. cd ../../RNAseq/scripts
+16. ./run_all.sh
+
+to plot data, run the following R scripts
+hybrid_yeast_HiC.R
+RNAseq/yeast_RNAseq.R
+microscopy/miscroscopy.R
+qPCR/Nup60-TAP_ChIP_qPCR.R
+
 need files:
-references/saccer3.fsa
-references/saccharomyces_cerevisiae_R64-2-1-20150113.gff
-references/SbayDRS.ultrascaf
-references/Sbay.gff
-references/Sbay3_new.fa
-references/Sbay3_revision.bed
-references/Spar.ultrascaf
-references/Spar.gff
-references/Spar_revision.bed
-references/DBVPG6044_FALCON_quiver.fa
-references/Y12_FALCON_quiver.fa
-references/2micron.fa
-references/rDNA.bed
-references/rDNA.fa
+RNAseq/yeast_RNAseq.R
+RNAseq/samples.txt
+RNAseq/nobackup/references/sacCer3_genes.gff
+RNAseq/nobackup/references/sacCer3.fa
+RNAseq/nobackup/references/sacCer3.genome
+RNAseq/sample_table.txt
+RNAseq/scripts/pipeline.sh
+RNAseq/scripts/gene_lengths.sh
+RNAseq/scripts/run.sh
+RNAseq/scripts/combine.sh
 rawfiles.txt
-restr_enz.txt
+samples_control.txt
 refs.txt
-samples.txt
-samples_controls.txt
-matrices.txt
-scripts/annotate_references.sh
-scripts/build_references.sh
-scripts/centromere_annotations.sh
-scripts/compile.sh
-scripts/create_Sbrep_mask.sh
-scripts/create_Spgap_mask.sh
+hybrid_yeast_HiC.R
+microscopy/microscopy.R
+microscopy/clustering_data.csv
+microscopy/cell_cycle_peripheral.csv
+microscopy/peripheral_data.csv
+microscopy/diploid_joint_peripheral_pairing.csv
 scripts/create_Y12xDBVPG6044_mask.sh
-scripts/digest_genome.cpp
-scripts/genome2reads.cpp
-scripts/homology_all_best.sh
-scripts/homology_matrices.cpp
-scripts/homology.sh
+scripts/centromere_annotations.sh
+scripts/homology_bins.sh
+scripts/trim_reads.sh
 scripts/make_matrix.cpp
-scripts/make_matrix.sh
-scripts/mappability.sh
-scripts/masks.sh
-scripts/pipeline.sh
+scripts/revise_Suva.sh
+scripts/build_references.sh
 scripts/prepare_genomes.sh
 scripts/process_pairs.cpp
-scripts/process_pairs_dual.cpp
-scripts/process_reads.sh
-scripts/revise_Sbay.sh
+scripts/mappability.sh
 scripts/revise_Spar.sh
-scripts/trim_reads.sh
-masks/rDNA.bed
+scripts/compile.sh
+scripts/annotate_references.sh
+scripts/create_Surep_mask.sh
+scripts/genome2reads.cpp
+scripts/pipeline.sh
+scripts/create_Spgap_mask.sh
+scripts/digest_genome.cpp
+scripts/make_matrix.sh
+scripts/masks.sh
+scripts/homology_matrices.cpp
+scripts/homology.sh
+scripts/process_reads.sh
+scripts/process_pairs_dual.cpp
+references/Suva3_revision.bed
+references/2micron.fa
+references/Suva3_new.fa
+references/Y12_FALCON_quiver.fa
+references/saccharomyces_cerevisiae_R64-2-1_20150113.gff
+references/saccer3.fsa
+references/rDNA.bed
+references/Spar_revision.bed
+references/rDNA.fa
+references/Spar.ultrascaf
+references/Spar.gff
+references/Sbay.gff
+references/DBVPG6044_FALCON_quiver.fa
+references/SbayDRS.ultrascaf
+restr_enz.txt
+plotting/plotting_refs.txt
+plotting/840k-860k.txt
+plotting/has1dels.txt
+plotting/matrices_revisions.txt
+samples.txt
+matrices.txt
+qPCR/Nup60-TAP_ChIP_qPCR.R
+qPCR/2017-03-31_ViiA7.txt
+qPCR/2017-03-25_ViiA7.txt
+ChIPseq/scripts/run.sh
+ChIPseq/scripts/pipeline.sh
+ChIPseq/samples.txt
+ChIPseq/nobackup/references/sacCer3.fa
+model/make_heatmaps.sh
+model/interactions2heatmap.cpp
+model/diploid_landmark.py
+model/matrices_model.txt
+model/run.sh
+model/run_all.sh
+model/pdb2interactions.cpp
 masks/none.bed
+masks/rDNA.bed

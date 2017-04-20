@@ -1,0 +1,8 @@
+YDG613_asynch	Spar_original	16000	none	1.0
+YDG613_asynch	Spar	16000	none	1.0
+YZB5-113_asynch	Suva_original	16000	none	1.0
+YZB5-113_asynch	Suva	16000	none	1.0
+YDG613_asynch	Spar_original	32000	none	1.0
+YDG613_asynch	Spar	32000	none	1.0
+YZB5-113_asynch	Suva_original	32000	none	1.0
+YZB5-113_asynch	Suva	32000	none	1.0

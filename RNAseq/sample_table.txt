@@ -1,0 +1,10 @@
+sample	condition
+asy_r1	asy
+asy_r2	asy
+asy_r3	asy
+gal_r1	gal
+gal_r2	gal
+gal_r3	gal
+sat_r1	sat
+sat_r2	sat
+sat_r3	sat

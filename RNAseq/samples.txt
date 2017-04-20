@@ -1,0 +1,9 @@
+asy_r1	asy_r1_S1_R1_001.fastq.gz	asy_r1_S1_R2_001.fastq.gz
+asy_r2	asy_r2_S2_R1_001.fastq.gz	asy_r2_S2_R2_001.fastq.gz
+asy_r3	asy_r3_S3_R1_001.fastq.gz	asy_r3_S3_R2_001.fastq.gz
+gal_r1	gal_r1_S4_R1_001.fastq.gz	gal_r1_S4_R2_001.fastq.gz
+gal_r2	gal_r2_S5_R1_001.fastq.gz	gal_r2_S5_R2_001.fastq.gz
+gal_r3	gal_r3_S6_R1_001.fastq.gz	gal_r3_S6_R2_001.fastq.gz
+sat_r1	sat_r1_S7_R1_001.fastq.gz	sat_r1_S7_R2_001.fastq.gz
+sat_r2	sat_r2_S8_R1_001.fastq.gz	sat_r2_S8_R2_001.fastq.gz
+sat_r3	sat_r3_S9_R1_001.fastq.gz	sat_r3_S9_R2_001.fastq.gz

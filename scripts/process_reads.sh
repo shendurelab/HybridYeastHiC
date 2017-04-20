@@ -67,4 +67,5 @@ if [ ! -r $out/assigned/$ref/$samp.out ] || $override_asn; then
   else
     ./process_pairs_dual $rsite $anns/$ref.$renz.bed 30 1000 <(samtools view $out/aligned/$ref1/$samp.1.bam) <(samtools view $out/aligned/$ref2/$samp.1.bam) <(samtools view $out/aligned/$ref1/$samp.2.bam) <(samtools view $out/aligned/$ref2/$samp.2.bam) $out/assigned/$ref/$samp.assigned $out/assigned/$ref/$samp.out
   fi
+  awk -v a=$ref1'_13' b=$ref2'_13' '($1==a && $7==b) || ($1==b && $7==a)' $out/assigned/$ref/$samp.chr13.assigned
 fi

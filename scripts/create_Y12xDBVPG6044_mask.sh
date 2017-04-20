@@ -2,11 +2,11 @@
 # create_Y12xDBVPG6044_mask.sh
 # Seungsoo Kim
 
-ref="Y12xDBVPG6044_quiver"
-lib1="Y12_asynch"
-ref1="Y12_quiver"
-lib2="DBVPG6044_asynch"
-ref2="DBVPG6044_quiver"
+ref="Y12xDBVPG6044"
+lib1="Y12_exponential_Sau3AI"
+ref1="Y12"
+lib2="DBVPG6044_exponential_Sau3AI"
+ref2="DBVPG6044"
 
 dir="../nobackup/aligned"
 

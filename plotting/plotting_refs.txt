@@ -1,0 +1,4 @@
+ScSu	Scer	Suva	S. cerevisiae	S. uvarum	Scer_12	Suva_12	385	752	292	672
+ScSp	Scer	Spar	S. cerevisiae	S. paradoxus	Scer_12	Spar_12	385	760	292	668
+SpSu	Spar	Suva	S. paradoxus	S. uvarum	Spar_12	Suva_12	375	742	283	662
+Y12xDBVPG6044	Y12	DBVPG6044	Y12	DBVPG6044	Y12_12	DBVPG6044_12	371	745	282	653

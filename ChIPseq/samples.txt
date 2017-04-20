@@ -1,0 +1,4 @@
+glucose_input	glucose_input_S1_R1_001.fastq.gz	glucose_input_S1_R2_001.fastq.gz
+galactose_input	galactose_input_S2_R1_001.fastq.gz	galactose_input_S2_R2_001.fastq.gz
+glucose_IP	glucose_IP_S3_R1_001.fastq.gz	glucose_IP_S3_R2_001.fastq.gz
+galactose_IP	galactose_IP_S4_R1_001.fastq.gz	galactose_IP_S4_R2_001.fastq.gz
